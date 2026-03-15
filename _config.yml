@@ -1,1 +1,6 @@
-
+title: Vítor Fonseca
+#logo
+description: I am a final year BSc in Aerospace Engineering student at Instituto Superior Técnico (IST Lisboa), where I am focusing on robotic systems. I am currently a team member of SocRob@Home at Intitute for Systems and Robotics (ISR - Lisboa) and I am managing the Autonomous Systems department of Técnico Fuel Cell (TFC) student-led association. My research at ISR focus on Embodied AI using Visual Language Models (VLMs) and Point Clouds 3D recontruction. 
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+- jekyll-remote-theme

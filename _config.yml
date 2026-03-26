@@ -4,3 +4,29 @@ description: I am a final year BSc in Aerospace Engineering student at Instituto
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
 - jekyll-remote-theme
+projects:
+  - title: Chatrex
+    description: Add a brief summary of what this project does, what problem it solves, and your role in it.
+    gif:
+    link_text: View project
+    link_url:
+  - title: Mapping
+    description: Add a short description here with the key result, technology, or research angle you want to highlight.
+    gif:
+    link_text: View project
+    link_url:
+  - title: Sensor Fusion
+    description: Add a short description here explaining the context, your contribution, and the outcome.
+    gif:
+    link_text: View project
+    link_url:
+  - title: Project 4
+    description: Replace this with another project, lab, publication, or system you want to feature on the page.
+    gif:
+    link_text: View project
+    link_url:
+  - title: Project 5
+    description: Replace this with your fifth featured project. You can also rename the link text or leave the link empty.
+    gif:
+    link_text: View project
+    link_url:

@@ -2,6 +2,9 @@ title: Vítor Fonseca
 logo: docs/assets/me.vf.png
 description: I am a final year BSc in Aerospace Engineering student at Instituto Superior Técnico (IST Lisboa), where I am focusing on robotic systems. I am currently a team member of SocRob@Home at Intitute for Systems and Robotics (ISR - Lisboa) and I am managing the Autonomous Systems department of Técnico Fuel Cell (TFC) student-led association. My research at ISR focus on Embodied AI using Visual Language Models (VLMs) and Point Clouds 3D recontruction. 
 remote_theme: pages-themes/minimal@v0.2.0
+linkedin_url: https://www.linkedin.com/in/vitor-hugo-fonseca/
+github_url: https://github.com/vitorhcf
+cv_url: /docs/assets/cv.pdf
 plugins:
 - jekyll-remote-theme
 projects:
@@ -10,14 +13,14 @@ projects:
     gif:
     link_text: View project
     link_url:
-  - title: Mapping
+  - title: AV Gazebo Simulation
     description: Add a short description here with the key result, technology, or research angle you want to highlight.
-    gif:
+    gif: 
     link_text: View project
     link_url:
   - title: Sensor Fusion
     description: Add a short description here explaining the context, your contribution, and the outcome.
-    gif:
+    gif: docs/assets/gazebotrim.gif
     link_text: View project
     link_url:
   - title: Project 4

@@ -67,39 +67,39 @@ a {
 
 .hero__links {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row; /* Forces horizontal alignment */
+  flex-wrap: nowrap;   /* Prevents them from stacking */
   justify-content: center;
-  gap: 10px;
+  gap: 16px;           /* Adjust this to change spacing between icons */
   margin-top: 22px;
 }
 
 .hero__link-pill {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 9px 14px;
+  justify-content: center;
+  width: 38px;         /* Much smaller fixed width */
+  height: 38px;        /* Much smaller fixed height */
   border: 1px solid var(--border);
-  border-radius: 999px;
+  border-radius: 50%;  /* Turns the button into a perfect circle */
   background: rgba(255, 253, 248, 0.82);
   text-decoration: none;
   color: var(--text);
-  font-size: 0.95rem;
-  font-weight: 600;
   box-shadow: 0 10px 24px rgba(23, 28, 38, 0.08);
   transition: transform 160ms ease, background-color 160ms ease, border-color 160ms ease;
 }
 
 .hero__link-pill:hover,
 .hero__link-pill:focus-visible {
-  transform: translateY(-1px);
+  transform: translateY(-2px);
   background: var(--surface-strong);
   border-color: rgba(15, 118, 110, 0.22);
 }
 
 .hero__link-icon {
   display: inline-flex;
-  width: 18px;
-  height: 18px;
+  width: 16px;         /* Shrunk down from 18px */
+  height: 16px;
   color: var(--accent);
 }
 

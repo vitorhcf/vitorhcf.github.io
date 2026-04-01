@@ -27,8 +27,8 @@ projects:
       - docs/assets/atlas.gif 
     link_text: View project
     link_url:
-  - title: Project 5
-    description: Featured project.
-    gif:
+  - title: Chatrex 
+    description: Chatrex (VLM) ROS2 bridge. Test for object detection and real-time performance. The prompt is "Please detect chairs; sofas; sitting people in this image. List each one with a different object index."
+    gif: docs/assets/chatrex.gif
     link_text: View project
     link_url:

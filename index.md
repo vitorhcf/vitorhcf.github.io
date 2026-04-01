@@ -43,13 +43,44 @@ title: Home
 
   <section class="projects" aria-label="Projects">
     {% for project in site.projects %}
+      {% assign has_media = false %}
+      {% if project.media and project.media.size > 0 %}
+        {% assign has_media = true %}
+      {% elsif project.gif %}
+        {% assign has_media = true %}
+      {% endif %}
+
       <article class="project-card">
         <div class="project-card__media">
-          {% if project.gif %}
-            <img src="{{ project.gif | relative_url }}" alt="{{ project.title }}">
+          {% if has_media %}
+            <div class="project-card__gallery">
+              {% if project.media and project.media.size > 0 %}
+                {% for media_item in project.media %}
+                  <a
+                    class="project-card__media-item"
+                    href="{{ media_item | relative_url }}"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Open {{ project.title }} media {{ forloop.index }} in a new tab"
+                  >
+                    <img src="{{ media_item | relative_url }}" alt="{{ project.title }} media {{ forloop.index }}">
+                  </a>
+                {% endfor %}
+              {% else %}
+                <a
+                  class="project-card__media-item"
+                  href="{{ project.gif | relative_url }}"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Open {{ project.title }} preview in a new tab"
+                >
+                  <img src="{{ project.gif | relative_url }}" alt="{{ project.title }}">
+                </a>
+              {% endif %}
+            </div>
           {% else %}
             <div class="project-card__placeholder">
-              Add a GIF path in <code>_config.yml</code> for this project to show a preview here.
+              Add one or more media paths in <code>_config.yml</code> for this project to show previews here.
             </div>
           {% endif %}
         </div>

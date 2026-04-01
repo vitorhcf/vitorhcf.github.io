@@ -16,15 +16,25 @@ Each project supports:
 - `title`
 - `description`
 - `gif`
+- `media`
 - `link_text`
 - `link_url`
 
 ## GIFs and assets
 
-If you want project GIFs, add them anywhere in the repo and point each `gif` field to that path. Example:
+If you want a single preview, keep using `gif`:
 
 ```yml
 gif: docs/assets/projects/chatrex.gif
 ```
 
-If `gif` is empty, the card shows a placeholder instead of a broken image.
+If you want multiple previews in the same project card, use `media` with one or more image/GIF paths. Each preview opens in a new tab when clicked.
+
+```yml
+media:
+  - docs/assets/projects/chatrex-1.png
+  - docs/assets/projects/chatrex-2.png
+  - docs/assets/projects/chatrex-demo.gif
+```
+
+If `media` is present, it takes priority over `gif`. If both are empty, the card shows a placeholder instead of a broken image.

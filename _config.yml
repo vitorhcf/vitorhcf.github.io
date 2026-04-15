@@ -1,6 +1,6 @@
 title: Vítor Fonseca
 logo: docs/assets/me.vf.png
-description: I am a final year BSc in Aerospace Engineering student at Instituto Superior Técnico (IST Lisboa), where I am focusing on robotic systems. I am currently a team member of SocRob@Home at Intitute for Systems and Robotics (ISR - Lisboa) and I am managing the Autonomous Systems department of Técnico Fuel Cell (TFC) student-led association. My research at ISR focus on Embodied AI using Visual Language Models (VLMs) and Point Clouds 3D recontruction. 
+description: I am a final-year BSc student in Aerospace Engineering at Instituto Superior Técnico (IST Lisboa), where I focus on robotic systems. I am currently a team member of SocRob@Home at the Institute for Systems and Robotics (ISR Lisboa), and I manage the Autonomous Systems department of Técnico Fuel Cell (TFC), a student-led association. My research at ISR focuses on Embodied AI using Visual Language Models (VLMs) and 3D point cloud reconstruction.
 remote_theme: pages-themes/minimal@v0.2.0
 linkedin_url: https://www.linkedin.com/in/vitor-hugo-fonseca/
 github_url: https://github.com/vitorhcf
@@ -9,26 +9,22 @@ plugins:
 - jekyll-remote-theme
 projects:
   - title: Semantic Reconstruction
-    description: Filtering and surface identification from Point Cloud generated in simulation. 3D mesh reconstruction of specific surfaces for manipulation tasks.
+    description: Filtering and surface identification from point clouds generated in simulation, with 3D mesh reconstruction of specific surfaces for manipulation tasks.
     gif: docs/assets/pcl.gif
-    link_text: View project
     link_url:
   - title: AV Gazebo Simulation
-    description: Gazebo Simulation.
+    description: Autonomous vehicle simulation in Gazebo.
     gif: docs/assets/gazebotrim.gif
-    link_text: View project
     link_url:
   - title: Drone Prototyping
-    description: Drone Prototyping.
+    description: Drone prototyping, from concept design to CAD and system layout.
     gif: docs/assets/atlas.gif
     media:
       - docs/assets/scheme.jpeg
       - docs/assets/drone_cad.jpeg
-      - docs/assets/atlas.gif 
-    link_text: View project
+      - docs/assets/atlas.gif
     link_url:
-  - title: Chatrex 
-    description: Chatrex (VLM) ROS2 bridge. Test for object detection and real-time performance. The prompt is "Please detect chairs; sofas; sitting people in this image. List each one with a different object index."
+  - title: Chatrex
+    description: Chatrex is a ROS 2 bridge for VLM-based object detection, used to test detection quality and real-time performance. The prompt shown is "Please detect chairs; sofas; sitting people in this image. List each one with a different object index."
     gif: docs/assets/chatrex.gif
-    link_text: View project
     link_url:

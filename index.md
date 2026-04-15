@@ -44,16 +44,19 @@ title: Home
   <section class="projects" aria-label="Projects">
     {% for project in site.projects %}
       {% assign has_media = false %}
+      {% assign media_count = 0 %}
       {% if project.media and project.media.size > 0 %}
         {% assign has_media = true %}
+        {% assign media_count = project.media.size %}
       {% elsif project.gif %}
         {% assign has_media = true %}
+        {% assign media_count = 1 %}
       {% endif %}
 
       <article class="project-card">
         <div class="project-card__media">
           {% if has_media %}
-            <div class="project-card__gallery">
+            <div class="project-card__gallery project-card__gallery--{{ media_count }}">
               {% if project.media and project.media.size > 0 %}
                 {% for media_item in project.media %}
                   <a
@@ -90,8 +93,8 @@ title: Home
           <p class="project-card__description">{{ project.description }}</p>
 
           {% if project.link_url %}
-            <a class="project-card__link" href="{{ project.link_url }}" target="_blank" rel="noreferrer">
-              {{ project.link_text | default: "View project" }}
+            <a class="project-card__link" href="{{ project.link_url }}" target="_blank" rel="noreferrer" aria-label="More information about {{ project.title }}">
+              More information
             </a>
           {% endif %}
         </div>

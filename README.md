@@ -17,7 +17,6 @@ Each project supports:
 - `description`
 - `gif`
 - `media`
-- `link_text`
 - `link_url`
 
 ## GIFs and assets
@@ -37,4 +36,4 @@ media:
   - docs/assets/projects/chatrex-demo.gif
 ```
 
-If `media` is present, it takes priority over `gif`. If both are empty, the card shows a placeholder instead of a broken image.
+If `media` is present, it takes priority over `gif`. If `link_url` is set, the card shows a "More information" link below the description. If both `media` and `gif` are empty, the card shows a placeholder instead of a broken image.

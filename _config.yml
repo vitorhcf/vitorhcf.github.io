@@ -11,12 +11,12 @@ projects:
   - title: Semantic Reconstruction
     description: Demo for filtering and surface identification from point clouds generated in simulation. The Open3D pipeline also generates a 3D mesh reconstruction of specific surfaces that are important for manipulation tasks at RoboCup 2026. I am also working on designing and fine-tuning a deep neural network to filter noisy real-world point clouds and perform accurate 3D object detection. The goal is to apply Edge AI techniques so it can run in real time on the robot's local computer.
     gif: docs/assets/pcl.gif
-    link_text: View project
+    link_text: More Info
     link_url: https://isr.tecnico.ulisboa.pt/projects_cat/irsg/ 
   - title: AV Gazebo Simulation
     description: Gazebo simulation designed to model sensors, actuators, and the track in order to validate the car's autonomy stack. The work included URDF, Gazebo controllers, a detection model, architecture optimization, sensor design, and calibration.
     gif: docs/assets/gazebotrim.gif
-    link_text: View project
+    link_text: More Info
     link_url: https://tfcell.tecnico.ulisboa.pt/
   - title: Manipulator AMR
     description: Personal project focused on designing an Autonomous Mobile Robot with manipulation capabilities. The goal is to expand my knowledge of reinforcement learning techniques for autonomous driving and manipulation.
@@ -31,15 +31,16 @@ projects:
     description: Visual Language Model (Chatrex) ROS 2 bridge. This project demonstrates object detection with real-time performance. The prompt is "Please detect chairs; sofas; sitting people in this image. List each one with a different object index." As shown, the model successfully outputs the bounding boxes for the requested prompt in under 1 second. The process uses cloud AI to run the model and then sends the inference results to the robot running ROS 2.
     gif: docs/assets/chatrex.gif
     media:
+      - docs/assets/chatrex.gif 
       - docs/assets/output_inference.jpg
-    link_text: View project
+    link_text: More Info
     link_url: https://github.com/IDEA-Research/ChatRex
   - title: Drone Prototyping
-    description: Quadrotor design, from avionics to CAD and manufacturing. The drone was designed for autonomous rescue applications, detecting a person and bridging communication with support services.
+    description: Quadrotor design, from avionics architecture to CAD and manufacturing. The drone was designed for autonomous rescue applications, detecting a person and bridging communication with support services.
     gif: docs/assets/atlas.gif
     media:
       - docs/assets/scheme.jpeg
       - docs/assets/drone_cad.jpeg
       - docs/assets/atlas.gif
-    link_text: View project
+    link_text: More Info
     link_url: https://aerotec.pt/atlas

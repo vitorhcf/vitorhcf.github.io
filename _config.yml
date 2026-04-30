@@ -9,7 +9,7 @@ plugins:
 - jekyll-remote-theme
 projects:
   - title: Semantic Reconstruction
-    description: Demo for filtering and surface identification from point clouds generated in simulation. The Open3D pipeline also generates a 3D mesh reconstruction of specific surfaces that are important for manipulation tasks at RoboCup 2026. I am also working on designing and fine-tuning a deep neural network to filter noisy real-world point clouds and perform accurate 3D object detection. The goal is to apply Edge AI techniques so it can run in real time on the robot's local computer.
+    description: A ROS 2 package for semantic mapping in domestic environments. The pipeline starts in a Gazebo-simulated environment; when the camera is oriented toward the desired surfaces, object detection and segmentation tools are used (currently YOLO with the COCO dataset, soon to be SAM 3). Based on the 2D segmented images, the system extracts 3D point clouds for each detected class. These point clouds are filtered and reconstructed into 3D meshes using Open3D. The meshes are saved in map coordinates and published as a MarkerArray for visualization in RViz. Different colors are assigned to different object classes in order to distinguish them semantically. This project is still in development for perception and manipulation tasks for RoboCup 2026. Click on 'View Project' to see the repository.
     gif: docs/assets/pcl.gif
     media:
       - docs/assets/yolo.png

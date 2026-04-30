@@ -11,7 +11,7 @@ projects:
   - title: Semantic Reconstruction
     description: Demo for filtering and surface identification from point clouds generated in simulation. The Open3D pipeline also generates a 3D mesh reconstruction of specific surfaces that are important for manipulation tasks at RoboCup 2026. I am also working on designing and fine-tuning a deep neural network to filter noisy real-world point clouds and perform accurate 3D object detection. The goal is to apply Edge AI techniques so it can run in real time on the robot's local computer.
     gif: docs/assets/pcl.gif
-        media:
+    media:
       - docs/assets/yolo.png
       - docs/assets/chair.png
       - docs/assets/table.png

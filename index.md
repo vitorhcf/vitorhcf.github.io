@@ -87,6 +87,9 @@ title: Home
 
         <div class="project-card__content">
           <h2 class="project-card__title">{{ project.title }}</h2>
+          {% if project.subtitle %}
+            <p class="project-card__subtitle">{{ project.subtitle }}</p>
+          {% endif %}
           <p class="project-card__description">{{ project.description }}</p>
 
           {% if project.link_url %}

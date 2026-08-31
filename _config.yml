@@ -1,6 +1,6 @@
 title: Vítor Fonseca
 logo: docs/assets/me.vf.png
-description: I am a final-year BSc student in Aerospace Engineering at Instituto Superior Técnico (IST Lisboa), where I focus on robotic systems. I am currently a team member of SocRob@Home at the Institute for Systems and Robotics (ISR Lisboa), and I manage the Autonomous Systems department of Técnico Fuel Cell (TFC), a student-led association. My research at ISR focuses on Embodied AI using Visual Language Models (VLMs) and 3D point cloud reconstruction.
+description: Robotics MSc student @ TUM | Perception, Control, Prototyping & Systems Integration (experience in UAVs, AMRs and AVs). Currently building a autonomous fixed-wing drone for GNSS denied and low visibility navigation using ROS 2, SLAM, and AI.
 remote_theme: pages-themes/minimal@v0.2.0
 linkedin_url: https://www.linkedin.com/in/vitor-hugo-fonseca/
 github_url: https://github.com/vitorhcf
@@ -14,7 +14,8 @@ projects:
     link_text: View project
     link_url: https://github.com/vitorhcf/Mesh-Semantic-Mapping 
   - title: Semantic Reconstruction
-    description: A ROS 2 package for semantic mapping in domestic environments. The pipeline starts in a Gazebo-simulated environment. When the camera is oriented toward the desired surfaces, object detection and segmentation tools are used (currently YOLO with the COCO dataset, soon to be SAM 3). Based on the 2D segmented images, the system extracts 3D point clouds for each detected class. These point clouds are filtered and reconstructed into 3D meshes using Open3D. The meshes are saved in map coordinates and published as a MarkerArray for visualization in RViz. Different colors are assigned to different object classes in order to distinguish them semantically. This project is still in development for perception and manipulation tasks for RoboCup 2026. Click on 'View Project' to see the repository.
+    subtitle: ISR (Institute for Systems and Robotics) Lisbon - SocRob@Home Team
+    description: ROS 2 semantic mapping for domestic robots, with YOLO and SAM3 variants both tested on real robots. Includes a lightweight FastAPI-based VLM interface for fast communication with a server.
     gif: docs/assets/pcl.gif
     media:
       - docs/assets/yolo.png
@@ -26,6 +27,7 @@ projects:
     link_text: View project
     link_url: https://github.com/vitorhcf/Mesh-Semantic-Mapping 
   - title: AV Gazebo Simulation
+    subtitle: TFC (Técnico Fuel Cell) - Autonomous Systems Team
     description: Gazebo simulation designed to model sensors, actuators, and the track in order to validate the car's autonomy stack. The work included URDF, Gazebo controllers, a detection model, architecture optimization, sensor design, and calibration.
     gif: docs/assets/gazebotrim.gif
     media:
@@ -35,11 +37,10 @@ projects:
     link_text: More Info
     link_url: https://tfcell.tecnico.ulisboa.pt/
   - title: Drone Prototyping
+    subtitle: AeroTéc ATLAS - Systems Team
     description: Quadrotor design, from avionics architecture to CAD and manufacturing. The drone was designed for autonomous rescue applications, detecting a person and bridging communication with support services.
     gif: docs/assets/atlas.gif
     media:
-      - docs/assets/scheme.jpeg
-      - docs/assets/drone_cad.jpeg
       - docs/assets/atlas.gif
       - docs/assets/icaro.jpeg
     link_text: More Info

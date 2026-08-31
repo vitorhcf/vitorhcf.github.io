@@ -15,8 +15,9 @@ projects:
     link_url: https://github.com/vitorhcf/Mesh-Semantic-Mapping 
   - title: Semantic Reconstruction
     subtitle: ISR (Institute for Systems and Robotics) Lisbon - SocRob@Home Team
-    description: ROS 2 semantic mapping for domestic robots, with YOLO and SAM3 variants both tested on real robots. Includes a lightweight FastAPI-based VLM interface for fast communication with a server.
+    description: ROS 2 semantic mapping package for domestic robots, combining a YOLO-based pipeline and a SAM3-based version, both validated on real robots. It extracts 3D point clouds from segmented images and reconstructs semantic meshes with Open3D for perception and manipulation tasks. I also implemented a lightweight FastAPI-based VLM interface for fast communication with a server.
     gif: docs/assets/pcl.gif
+    media_layout: semantic
     media:
       - docs/assets/yolo.png
       - docs/assets/chair.png
@@ -30,10 +31,11 @@ projects:
     subtitle: TFC (Técnico Fuel Cell) - Autonomous Systems Team
     description: Gazebo simulation designed to model sensors, actuators, and the track in order to validate the car's autonomy stack. The work included URDF, Gazebo controllers, a detection model, architecture optimization, sensor design, and calibration.
     gif: docs/assets/gazebotrim.gif
+    media_layout: tfc
     media:
-      - docs/assets/gazebotrim.gif
       - docs/assets/carro_sim.jpeg
       - docs/assets/carro_vid.gif
+      - docs/assets/gazebotrim.gif
     link_text: More Info
     link_url: https://tfcell.tecnico.ulisboa.pt/
   - title: Drone Prototyping

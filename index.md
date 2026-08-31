@@ -53,7 +53,11 @@ title: Home
       <article class="project-card">
         <div class="project-card__media">
           {% if has_media %}
-            <div class="project-card__gallery">
+            {% assign gallery_class = 'project-card__gallery' %}
+            {% if project.media_layout %}
+              {% assign gallery_class = gallery_class | append: ' project-card__gallery--' | append: project.media_layout %}
+            {% endif %}
+            <div class="{{ gallery_class }}">
               {% if project.media and project.media.size > 0 %}
                 {% for media_item in project.media %}
                   <a

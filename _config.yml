@@ -1,6 +1,6 @@
 title: Vítor Fonseca
 logo: docs/assets/me.vf.png
-description: Robotics MSc student @ TUM | Perception, Control, Prototyping & Systems Integration (experience in UAVs, AMRs and AVs). Currently building a autonomous fixed-wing drone for GNSS denied and low visibility navigation using ROS 2, SLAM, and AI.
+description: Robotics MSc student @ TUM | Perception, Control, Prototyping & Systems Integration (experience in UAVs, AMRs, and AVs). Currently building an autonomous fixed-wing drone for GNSS denied and low visibility navigation using ROS 2, SLAM, and AI.
 remote_theme: pages-themes/minimal@v0.2.0
 linkedin_url: https://www.linkedin.com/in/vitor-hugo-fonseca/
 github_url: https://github.com/vitorhcf
@@ -15,7 +15,7 @@ projects:
     link_url: https://github.com/vitorhcf/Mesh-Semantic-Mapping 
   - title: Semantic Reconstruction
     subtitle: ISR (Institute for Systems and Robotics) Lisbon - SocRob@Home Team
-    description: ROS 2 semantic mapping package for domestic robots, combining a YOLO-based pipeline and a SAM3-based version, both validated on real robots. It extracts 3D point clouds from segmented images and reconstructs semantic meshes with Open3D for perception and manipulation tasks. I also implemented a lightweight FastAPI-based VLM interface for fast communication with a server.
+    description: ROS 2 semantic mapping package for service robots, combining a YOLO based pipeline and a SAM3 based version, both validated on real robots. It extracts 3D point clouds from segmented images and reconstructs semantic meshes with Open3D for perception and manipulation tasks in preparation for RoboCup 2026 and euRobin. I also implemented a lightweight VLM interface for the robot's autonomy stack using FastAPI for fast communication with a server in real-time applications.
     gif: docs/assets/pcl.gif
     media_layout: semantic
     media:
@@ -27,11 +27,11 @@ projects:
       - docs/assets/IMG_0445.jpeg
     link_text: View project
     link_url: https://github.com/vitorhcf/Mesh-Semantic-Mapping 
-  - title: AV Gazebo Simulation
+  - title: Autonomous stack development and Gazebo Simulation
     subtitle: TFC (Técnico Fuel Cell) - Autonomous Systems Team
-    description: Gazebo simulation designed to model sensors, actuators, and the track in order to validate the car's autonomy stack. The work included URDF, Gazebo controllers, a detection model, architecture optimization, sensor design, and calibration.
-    gif: docs/assets/gazebotrim.gif
+    description: My work included URDF design, Gazebo controllers, detection model implementation and training (with YOLO), sensor fusion and calibration, SLAM optimization, and MPC tuning. I was also responsible for the complete development of the Gazebo simulation, designed to model sensors, actuators, and the racing track to validate the car's autonomy stack in preparation for Shell Eco Marathon 2026 in Poland.
     media_layout: tfc
+    gif: docs/assets/gazebotrim.gif
     media:
       - docs/assets/carro_sim.jpeg
       - docs/assets/carro_vid.gif
@@ -40,7 +40,7 @@ projects:
     link_url: https://tfcell.tecnico.ulisboa.pt/
   - title: Drone Prototyping
     subtitle: AeroTéc ATLAS - Systems Team
-    description: Quadrotor design, from avionics architecture to CAD and manufacturing. The drone was designed for autonomous rescue applications, detecting a person and bridging communication with support services.
+    description: Quadrotor design, from avionics architecture to CAD and manufacturing. The drone was designed for autonomous rescue applications, detecting a person and establishing communication with support services.
     gif: docs/assets/atlas.gif
     media:
       - docs/assets/atlas.gif
@@ -48,7 +48,7 @@ projects:
     link_text: More Info
     link_url: https://aerotec.pt/atlas
   - title: Prototyping Projects
-    description: Personal projects focused on designing prototypes using 3D printing, power electronics, sensors, embedded programming (C/C++) and ROS2.
+    description: Personal projects focused on designing prototypes using 3D printing, power electronics, sensors, embedded programming (C/C++), and ROS 2. These include a small-scale AMR, a robotic arm, and a 1U satellite.
     media:
       - docs/assets/mr1.jpeg
       - docs/assets/sat.gif

@@ -8,6 +8,11 @@ cv_url: /docs/assets/cv.pdf
 plugins:
 - jekyll-remote-theme
 projects:
+  - title: Autonomous Tailsitter UAV
+    description: TBD
+    gif: TBD
+    link_text: View project
+    link_url: https://github.com/vitorhcf/Mesh-Semantic-Mapping 
   - title: Semantic Reconstruction
     description: A ROS 2 package for semantic mapping in domestic environments. The pipeline starts in a Gazebo-simulated environment. When the camera is oriented toward the desired surfaces, object detection and segmentation tools are used (currently YOLO with the COCO dataset, soon to be SAM 3). Based on the 2D segmented images, the system extracts 3D point clouds for each detected class. These point clouds are filtered and reconstructed into 3D meshes using Open3D. The meshes are saved in map coordinates and published as a MarkerArray for visualization in RViz. Different colors are assigned to different object classes in order to distinguish them semantically. This project is still in development for perception and manipulation tasks for RoboCup 2026. Click on 'View Project' to see the repository.
     gif: docs/assets/pcl.gif
@@ -16,30 +21,19 @@ projects:
       - docs/assets/chair.png
       - docs/assets/table.png
       - docs/assets/reconstruction.png
+      - docs/assets/output_inference.jpg
+      - docs/assets/IMG_0445.jpeg
     link_text: View project
     link_url: https://github.com/vitorhcf/Mesh-Semantic-Mapping 
   - title: AV Gazebo Simulation
     description: Gazebo simulation designed to model sensors, actuators, and the track in order to validate the car's autonomy stack. The work included URDF, Gazebo controllers, a detection model, architecture optimization, sensor design, and calibration.
     gif: docs/assets/gazebotrim.gif
+    media:
+      - docs/assets/gazebotrim.gif
+      - docs/assets/carro_sim.jpeg
+      - docs/assets/carro_vid.gif
     link_text: More Info
     link_url: https://tfcell.tecnico.ulisboa.pt/
-  - title: Manipulator AMR
-    description: Personal project focused on designing an Autonomous Mobile Robot with manipulation capabilities. The goal is to expand my knowledge of reinforcement learning techniques for autonomous driving and manipulation.
-    gif: 
-    media:
-      - docs/assets/mr1.jpeg
-      - docs/assets/mr2.jpeg
-      - docs/assets/mr3.jpeg
-    link_text: View project
-    link_url: https://github.com/vitorhcf/Manipulator-AMR 
-  - title: VLM ROS2 bridge and optimization
-    description: Visual Language Model (Chatrex) ROS 2 bridge. This project demonstrates object detection with real-time performance. The prompt is "Please detect chairs; sofas; sitting people in this image. List each one with a different object index." As shown, the model successfully outputs the bounding boxes for the requested prompt in under 1 second. The process uses cloud AI to run the model and then sends the inference results to the robot running ROS 2.
-    gif: docs/assets/chatrex.gif
-    media:
-      - docs/assets/chatrex.gif 
-      - docs/assets/output_inference.jpg
-    link_text: More Info
-    link_url: https://github.com/IDEA-Research/ChatRex
   - title: Drone Prototyping
     description: Quadrotor design, from avionics architecture to CAD and manufacturing. The drone was designed for autonomous rescue applications, detecting a person and bridging communication with support services.
     gif: docs/assets/atlas.gif
@@ -50,3 +44,10 @@ projects:
       - docs/assets/icaro.jpeg
     link_text: More Info
     link_url: https://aerotec.pt/atlas
+  - title: Prototyping Projects
+    description: Personal projects focused on designing prototypes using 3D printing, power electronics, sensors, embedded programming (C/C++) and ROS2.
+    media:
+      - docs/assets/mr1.jpeg
+      - docs/assets/sat.gif
+    link_text: View project
+    link_url: https://github.com/vitorhcf/Manipulator-AMR 

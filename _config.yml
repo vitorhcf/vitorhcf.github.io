@@ -12,8 +12,8 @@ projects:
     description: Personal self-funded autonomous UAV project designed to stay under 5 kg, with 3 motors (one pusher is still missing), VTOL capability, and the efficiency, speed, and reliability of a fixed-wing aircraft, capable of remote operations. The frame is completely 3D printed and the project is currently in development. I am now leading flight testing and control tuning with PX4 Autopilot to iterate on autonomous flight dynamics, while also developing a ROS 2 perception and navigation framework based on multi-modal sensor fusion (LiDAR, radar, IR, RGB) for GPS-denied and low-visibility operations.
     gif: TBD
     media:
-      - docs/assets/uav1.png
-      - docs/assets/uav2.png
+      - docs/assets/uav1.jpeg
+      - docs/assets/uav2.jpeg
   - title: Semantic 3D Mesh Reconstruction
     subtitle: ISR (Institute for Systems and Robotics) Lisbon - SocRob@Home Team
     description: ROS 2 semantic mapping package for service robots, combining a YOLO based pipeline and a SAM3 based version, both validated on real robots. It extracts 3D point clouds from segmented images and reconstructs semantic meshes with Open3D for perception and manipulation tasks in preparation for RoboCup 2026 and euRobin. I also implemented a lightweight VLM interface for the robot's autonomy stack using FastAPI for fast communication with a server in real-time applications.

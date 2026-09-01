@@ -14,6 +14,7 @@ projects:
     media:
       - docs/assets/uav1.png
       - docs/assets/uav2.png
+  - title: Semantic 3D Mesh Reconstruction
     subtitle: ISR (Institute for Systems and Robotics) Lisbon - SocRob@Home Team
     description: ROS 2 semantic mapping package for service robots, combining a YOLO based pipeline and a SAM3 based version, both validated on real robots. It extracts 3D point clouds from segmented images and reconstructs semantic meshes with Open3D for perception and manipulation tasks in preparation for RoboCup 2026 and euRobin. I also implemented a lightweight VLM interface for the robot's autonomy stack using FastAPI for fast communication with a server in real-time applications.
     gif: docs/assets/pcl.gif

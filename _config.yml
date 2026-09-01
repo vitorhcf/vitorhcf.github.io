@@ -9,7 +9,7 @@ plugins:
 - jekyll-remote-theme
 projects:
   - title: Autonomous Tailsitter UAV
-    description: Personal self-funded autonomous UAV project with 1.3m wingspan, designed to stay under 5 kg, with 3 motors (one pusher is still missing), VTOL capability, and the efficiency, speed, and reliability of a fixed-wing aircraft, capable of remote operations. The frame is completely 3D printed and the project is currently in development. I am now leading flight testing and control tuning with PX4 Autopilot to iterate on autonomous flight dynamics, while also developing a ROS 2 perception and navigation framework based on multi-modal sensor fusion (LiDAR, radar, IR, RGB) for GPS-denied and low-visibility operations.
+    description: Personal self-funded autonomous UAV project with 1.3m wingspan, designed to stay under 5 kg, with only 2 motors, VTOL capability, and the efficiency, speed, and reliability of a fixed-wing aircraft, capable of remote operations. The frame is completely 3D printed and the project is currently in development. I am now leading flight testing and control tuning with PX4 Autopilot to iterate on autonomous flight dynamics, while also developing a ROS 2 perception and navigation framework based on multi-modal sensor fusion (LiDAR, radar, IR, RGB) for GPS-denied and low-visibility operations.
     gif: TBD
     media_layout: uav
     media:

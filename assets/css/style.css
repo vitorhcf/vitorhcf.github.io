@@ -332,4 +332,19 @@ a {
     gap: 8px;
     padding: 8px;
   }
+
+  .project-card__gallery--uav {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    min-height: 220px;
+  }
+
+  .project-card__gallery--uav .project-card__media-item {
+    min-height: 100px;
+    aspect-ratio: 1.7;
+  }
+
+  .project-card__gallery--uav .project-card__media-item:first-child {
+    min-height: 120px;
+  }
 }

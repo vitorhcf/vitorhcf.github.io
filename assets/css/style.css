@@ -177,6 +177,21 @@ a {
   aspect-ratio: 1.2;
 }
 
+.project-card__gallery--uav {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.4fr 1fr;
+  gap: 10px;
+}
+
+.project-card__gallery--uav .project-card__media-item {
+  min-height: 130px;
+  aspect-ratio: 1.5;
+}
+
+.project-card__gallery--uav .project-card__media-item:first-child {
+  min-height: 180px;
+}
+
 .project-card__gallery--tfc {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-template-areas:

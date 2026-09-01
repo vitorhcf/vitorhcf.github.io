@@ -28,6 +28,7 @@ title: Home
             </span>
           </a>
         {% endif %}
+        {%- comment -%}
         {% if site.cv_url %}
           <a class="hero__link-pill" href="{{ site.cv_url | relative_url }}" aria-label="CV">
             <span class="hero__link-icon" aria-hidden="true">
@@ -37,6 +38,7 @@ title: Home
             </span>
           </a>
         {% endif %}
+        {%- endcomment -%}
       </nav>
     {% endif %}
   </section>
